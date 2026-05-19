@@ -1,293 +1,387 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AURA MOTOR LAB</title>
+  <title>AURA MOTOR LAB — Premier Automotive Facility · Miami, FL</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- NAV -->
+  <!-- ── NAV ──────────────────────────────────────────── -->
   <nav class="nav" id="nav">
-    <div class="nav__logo">
-      <img src="assets/logo.jpg" alt="Aura Motor Lab" class="nav__logo-img" />
-    </div>
+    <a href="#home" class="nav__logo">
+      <img src="assets/logo-dark.jpg" alt="Aura Motor Lab" />
+    </a>
     <button class="nav__toggle" id="navToggle" aria-label="Menu">
-      <span></span><span></span><span></span>
+      <span></span><span></span>
     </button>
     <ul class="nav__menu" id="navMenu">
-      <li><a href="#programs">PROGRAMAS</a></li>
-      <li><a href="#philosophy">FILOSOFÍA</a></li>
-      <li><a href="#process">PROCESO</a></li>
-      <li><a href="#contact" class="nav__cta">CONTACTO</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#brands">Brands</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Work</a></li>
+      <li><a href="#contact" class="nav__cta">Contact Us</a></li>
     </ul>
   </nav>
 
-  <!-- HERO -->
+  <!-- ── HERO ─────────────────────────────────────────── -->
   <section class="hero" id="home">
     <div class="hero__video-wrap">
       <video class="hero__video" autoplay muted loop playsinline>
-        <source src="assets/hero.mov" type="video/mp4" />
-        <source src="assets/hero.mov" type="video/quicktime" />
+        <source src="assets/hero2.mp4" type="video/mp4" />
       </video>
       <div class="hero__overlay"></div>
     </div>
     <div class="hero__content">
-      <p class="hero__eyebrow">PRECISION — PERFORMANCE — PASSION</p>
-      <h1 class="hero__title">
-        <span class="hero__title-aura">AURA</span>
-        <span class="hero__title-sub">MOTOR LAB</span>
-      </h1>
-      <p class="hero__tagline">Una interpretación moderna del automóvil de alto rendimiento</p>
-      <a href="#programs" class="hero__btn">EXPLORAR PROGRAMAS</a>
+      <p class="hero__eyebrow">Miami's Premier Independent</p>
+      <h1 class="hero__title">The Art of<br/><em>Automotive</em><br/>Excellence</h1>
+      <p class="hero__sub">European & Exotic Specialists · Since 2011</p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn-primary">Schedule Service</a>
+        <a href="#services" class="btn-ghost">Our Services</a>
+      </div>
     </div>
-    <div class="hero__scroll">
-      <span>SCROLL</span>
-      <div class="hero__scroll-line"></div>
+    <div class="hero__badge">
+      <span>BBB</span>
+      <span>A+</span>
     </div>
+    <a href="#services" class="hero__scroll" aria-label="Scroll">
+      <div class="hero__scroll-icon"></div>
+    </a>
   </section>
 
-  <!-- INTRO STRIP -->
-  <section class="intro">
+  <!-- ── MARQUEE STRIP ─────────────────────────────────── -->
+  <div class="marquee-wrap">
+    <div class="marquee">
+      <span>Service & Repair</span>
+      <span class="marquee__dot">·</span>
+      <span>Collision Repair</span>
+      <span class="marquee__dot">·</span>
+      <span>Euro & Exotic Specialists</span>
+      <span class="marquee__dot">·</span>
+      <span>Paint Protection</span>
+      <span class="marquee__dot">·</span>
+      <span>Restoration Projects</span>
+      <span class="marquee__dot">·</span>
+      <span>Factory Certified Technicians</span>
+      <span class="marquee__dot">·</span>
+      <span>Service & Repair</span>
+      <span class="marquee__dot">·</span>
+      <span>Collision Repair</span>
+      <span class="marquee__dot">·</span>
+      <span>Euro & Exotic Specialists</span>
+      <span class="marquee__dot">·</span>
+      <span>Paint Protection</span>
+      <span class="marquee__dot">·</span>
+      <span>Restoration Projects</span>
+      <span class="marquee__dot">·</span>
+      <span>Factory Certified Technicians</span>
+      <span class="marquee__dot">·</span>
+    </div>
+  </div>
+
+  <!-- ── ABOUT INTRO ───────────────────────────────────── -->
+  <section class="intro" id="about">
     <div class="intro__inner">
-      <div class="intro__stat">
-        <span class="intro__num">100+</span>
-        <span class="intro__label">Horas de ingeniería por unidad</span>
+      <div class="intro__text">
+        <p class="eyebrow">About Aura Motor Lab</p>
+        <h2 class="section-title">South Florida's Leading Independent<br/>Automotive Repair Facility</h2>
+        <p class="intro__body">Since 2011, Aura Motor Lab has been the premier destination for European and exotic vehicle repair in South Florida. Our 25,000 sq ft two-story facility is equipped with seven lifts and staffed by factory-certified master technicians dedicated to one thing: your vehicle at its absolute best.</p>
+        <p class="intro__body">Family operated. Uncompromising standards. BBB A+ rated.</p>
+        <a href="#contact" class="btn-outline">Get in Touch</a>
       </div>
-      <div class="intro__divider"></div>
-      <div class="intro__stat">
-        <span class="intro__num">0</span>
-        <span class="intro__label">Compromisos en calidad</span>
-      </div>
-      <div class="intro__divider"></div>
-      <div class="intro__stat">
-        <span class="intro__num">∞</span>
-        <span class="intro__label">Posibilidades de personalización</span>
+      <div class="intro__stats">
+        <div class="stat">
+          <span class="stat__num">2011</span>
+          <span class="stat__label">Established</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">25K</span>
+          <span class="stat__label">Sq Ft Facility</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">7</span>
+          <span class="stat__label">Lifts</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">A+</span>
+          <span class="stat__label">BBB Rating</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- PROGRAMS -->
-  <section class="programs" id="programs">
-    <div class="programs__header">
-      <p class="section-eyebrow">NUESTROS PROGRAMAS</p>
-      <h2 class="section-title">Ingeniería sin concesiones</h2>
+  <!-- ── SERVICES ──────────────────────────────────────── -->
+  <section class="services" id="services">
+    <div class="services__header">
+      <p class="eyebrow">What We Do</p>
+      <h2 class="section-title">Complete Automotive Services</h2>
     </div>
-    <div class="programs__grid">
+    <div class="services__grid">
 
-      <article class="program-card" data-index="01">
-        <div class="program-card__img-wrap">
-          <div class="program-card__img program-card__img--1"></div>
+      <article class="service-card">
+        <div class="service-card__number">01</div>
+        <div class="service-card__icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="1.2"/><path d="M24 4v4M24 40v4M4 24h4M40 24h4M9.4 9.4l2.8 2.8M35.8 35.8l2.8 2.8M9.4 38.6l2.8-2.8M35.8 12.2l2.8-2.8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
         </div>
-        <div class="program-card__body">
-          <span class="program-card__num">01</span>
-          <h3 class="program-card__name">AURA GT</h3>
-          <p class="program-card__desc">Rendimiento de pista con confort de carretera. Motor biturbo de alta compresión, suspensión adaptativa y aerodinámica activa.</p>
-          <a href="#contact" class="program-card__link">SOLICITAR INFORMACIÓN →</a>
-        </div>
+        <h3>Electrical Diagnostics</h3>
+        <p>Advanced digital tools to diagnose the full health and performance of your vehicle's electrical systems with precision.</p>
       </article>
 
-      <article class="program-card" data-index="02">
-        <div class="program-card__img-wrap">
-          <div class="program-card__img program-card__img--2"></div>
+      <article class="service-card">
+        <div class="service-card__number">02</div>
+        <div class="service-card__icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M8 36V16a2 2 0 012-2h28a2 2 0 012 2v20" stroke="currentColor" stroke-width="1.2"/><path d="M4 36h40M16 36v-8h16v8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M20 28v-4h8v4" stroke="currentColor" stroke-width="1.2"/></svg>
         </div>
-        <div class="program-card__body">
-          <span class="program-card__num">02</span>
-          <h3 class="program-card__name">AURA SPEEDSTER</h3>
-          <p class="program-card__desc">Carrocería descapotable, estructura de fibra de carbono y una experiencia sensorial diseñada para el piloto.</p>
-          <a href="#contact" class="program-card__link">SOLICITAR INFORMACIÓN →</a>
-        </div>
+        <h3>Scheduled Maintenance</h3>
+        <p>Manufacturer-recommended service programs at a fraction of dealership cost — with the same expertise and genuine parts.</p>
       </article>
 
-      <article class="program-card" data-index="03">
-        <div class="program-card__img-wrap">
-          <div class="program-card__img program-card__img--3"></div>
+      <article class="service-card">
+        <div class="service-card__number">03</div>
+        <div class="service-card__icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M12 24h24M12 32h16M28 8l8 8-8 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="24" r="3" stroke="currentColor" stroke-width="1.2"/></svg>
         </div>
-        <div class="program-card__body">
-          <span class="program-card__num">03</span>
-          <h3 class="program-card__name">AURA COMMISSION</h3>
-          <p class="program-card__desc">Un vehículo completamente a medida. Desde la ingeniería hasta el último detalle de interiores — diseñado exclusivamente para ti.</p>
-          <a href="#contact" class="program-card__link">SOLICITAR INFORMACIÓN →</a>
+        <h3>Mechanical Repair</h3>
+        <p>From minor fluid leaks to complete engine replacements — our master technicians handle every level of mechanical work.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card__number">04</div>
+        <div class="service-card__icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M6 38l8-8 6 6 12-14 10 10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><rect x="6" y="10" width="36" height="28" rx="2" stroke="currentColor" stroke-width="1.2"/></svg>
         </div>
+        <h3>Collision Repair</h3>
+        <p>Exclusive collision repair for high-end vehicles. We restore your exotic or European vehicle to factory specifications — or better.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card__number">05</div>
+        <div class="service-card__icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M24 8C15.2 8 8 15.2 8 24s7.2 16 16 16 16-7.2 16-16S32.8 8 24 8z" stroke="currentColor" stroke-width="1.2"/><path d="M24 16v8l6 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Detail & Paint Protection</h3>
+        <p>Professional Paint Protection Film (PPF), ceramic coating, and full detailing services to preserve your vehicle's finish.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card__number">06</div>
+        <div class="service-card__icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M8 40V24L24 8l16 16v16H30v-9h-4v9H8z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Restoration Projects</h3>
+        <p>Dozens of custom restoration projects completed. We transform vintage and classic vehicles into masterpieces of precision engineering.</p>
       </article>
 
     </div>
   </section>
 
-  <!-- PHILOSOPHY -->
-  <section class="philosophy" id="philosophy">
-    <div class="philosophy__media">
-      <div class="philosophy__media-inner"></div>
+  <!-- ── BRANDS ────────────────────────────────────────── -->
+  <section class="brands" id="brands">
+    <div class="brands__header">
+      <p class="eyebrow">Our Specialties</p>
+      <h2 class="section-title">Euro & Exotic Specialists</h2>
+      <p class="brands__sub">Factory-certified expertise across the world's most prestigious automotive marques</p>
     </div>
-    <div class="philosophy__text">
-      <p class="section-eyebrow">NUESTRA FILOSOFÍA</p>
-      <h2 class="section-title">Construido para<br/>los que sienten<br/>cada curva</h2>
-      <p class="philosophy__body">En Aura Motor Lab no fabricamos autos. Creamos instrumentos de precisión que conectan al conductor con la carretera a un nivel puramente visceral. Cada componente es elegido, cada milímetro es calculado, cada unidad es una obra única.</p>
-      <p class="philosophy__body">No hay producción en masa. No hay atajos. Solo ingeniería obsesiva al servicio de la experiencia de conducción.</p>
-      <a href="#process" class="btn-outline">CONOCER EL PROCESO</a>
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section class="process" id="process">
-    <div class="process__header">
-      <p class="section-eyebrow">CÓMO LO HACEMOS</p>
-      <h2 class="section-title">El proceso Aura</h2>
-    </div>
-    <div class="process__steps">
-
-      <div class="process-step">
-        <div class="process-step__icon">
-          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="30" cy="30" r="29" stroke="#00b4d8" stroke-width="1"/>
-            <path d="M20 30 L28 38 L40 22" stroke="#00b4d8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <span class="process-step__num">01</span>
-        <h3 class="process-step__title">CONSULTA</h3>
-        <p class="process-step__desc">Definimos juntos tu visión: desempeño, estética, uso y presupuesto.</p>
-      </div>
-
-      <div class="process-step">
-        <div class="process-step__icon">
-          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="30" cy="30" r="29" stroke="#00b4d8" stroke-width="1"/>
-            <rect x="18" y="20" width="24" height="20" rx="2" stroke="#00b4d8" stroke-width="1.5"/>
-            <line x1="22" y1="27" x2="38" y2="27" stroke="#00b4d8" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="22" y1="32" x2="32" y2="32" stroke="#00b4d8" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <span class="process-step__num">02</span>
-        <h3 class="process-step__title">DISEÑO</h3>
-        <p class="process-step__desc">Ingeniería y diseño industrial trabajan en conjunto para dar forma a cada detalle.</p>
-      </div>
-
-      <div class="process-step">
-        <div class="process-step__icon">
-          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="30" cy="30" r="29" stroke="#00b4d8" stroke-width="1"/>
-            <path d="M22 38 L22 28 L30 22 L38 28 L38 38" stroke="#00b4d8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <rect x="26" y="31" width="8" height="7" stroke="#00b4d8" stroke-width="1.5"/>
-          </svg>
-        </div>
-        <span class="process-step__num">03</span>
-        <h3 class="process-step__title">FABRICACIÓN</h3>
-        <p class="process-step__desc">Construcción artesanal en nuestro taller, con materiales de primer nivel y tolerancias mínimas.</p>
-      </div>
-
-      <div class="process-step">
-        <div class="process-step__icon">
-          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="30" cy="30" r="29" stroke="#00b4d8" stroke-width="1"/>
-            <circle cx="30" cy="30" r="8" stroke="#00b4d8" stroke-width="1.5"/>
-            <path d="M30 18 L30 22 M30 38 L30 42 M18 30 L22 30 M38 30 L42 30" stroke="#00b4d8" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <span class="process-step__num">04</span>
-        <h3 class="process-step__title">CALIBRACIÓN</h3>
-        <p class="process-step__desc">Pruebas exhaustivas en pista y carretera hasta alcanzar la configuración óptima.</p>
-      </div>
-
-      <div class="process-step">
-        <div class="process-step__icon">
-          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="30" cy="30" r="29" stroke="#00b4d8" stroke-width="1"/>
-            <path d="M22 30 Q30 20 38 30 Q30 40 22 30Z" stroke="#00b4d8" stroke-width="1.5"/>
-            <circle cx="30" cy="30" r="3" fill="#00b4d8"/>
-          </svg>
-        </div>
-        <span class="process-step__num">05</span>
-        <h3 class="process-step__title">ENTREGA</h3>
-        <p class="process-step__desc">Tu vehículo llega con documentación completa, garantía Aura y soporte vitalicio.</p>
-      </div>
-
+    <div class="brands__grid">
+      <div class="brand-item"><span>McLaren</span></div>
+      <div class="brand-item"><span>Ferrari</span></div>
+      <div class="brand-item"><span>Lamborghini</span></div>
+      <div class="brand-item"><span>Porsche</span></div>
+      <div class="brand-item"><span>Aston Martin</span></div>
+      <div class="brand-item"><span>Bentley</span></div>
+      <div class="brand-item"><span>Rolls-Royce</span></div>
+      <div class="brand-item"><span>BMW</span></div>
+      <div class="brand-item"><span>Mercedes-Benz</span></div>
+      <div class="brand-item"><span>Audi</span></div>
+      <div class="brand-item"><span>Maserati</span></div>
+      <div class="brand-item"><span>Land Rover</span></div>
     </div>
   </section>
 
-  <!-- COMMISSION SPOTLIGHT -->
-  <section class="spotlight">
-    <div class="spotlight__inner">
-      <p class="section-eyebrow">PROYECTO DESTACADO</p>
-      <h2 class="spotlight__title">AURA X-01<br/><span>COMMISSION SERIES</span></h2>
-      <p class="spotlight__body">Nuestra primera comisión exclusiva. Un vehículo construido desde cero para un cliente que exigía lo imposible — y lo recibió.</p>
-      <a href="#contact" class="hero__btn">SOLICITAR TU COMISIÓN</a>
+  <!-- ── SPLIT FEATURE ─────────────────────────────────── -->
+  <section class="feature">
+    <div class="feature__media">
+      <div class="feature__media-bg"></div>
+    </div>
+    <div class="feature__content">
+      <p class="eyebrow">Why Aura Motor Lab</p>
+      <h2 class="section-title">Master Technicians.<br/>Factory Standards.<br/>Independent Pricing.</h2>
+      <ul class="feature__list">
+        <li>
+          <span class="feature__check">→</span>
+          <div>
+            <strong>Factory-Certified Master Technicians</strong>
+            <p>Our team holds factory certifications for every brand we service — the same expertise as the dealership, without the overhead.</p>
+          </div>
+        </li>
+        <li>
+          <span class="feature__check">→</span>
+          <div>
+            <strong>Family Operated Since 2011</strong>
+            <p>A personal relationship with every client. We treat your vehicle as our own.</p>
+          </div>
+        </li>
+        <li>
+          <span class="feature__check">→</span>
+          <div>
+            <strong>State-of-the-Art Facility</strong>
+            <p>25,000 sq ft across two floors with seven lifts, cutting-edge diagnostic equipment, and a dedicated collision bay.</p>
+          </div>
+        </li>
+        <li>
+          <span class="feature__check">→</span>
+          <div>
+            <strong>BBB A+ Accredited</strong>
+            <p>A track record of 5-star service built over more than a decade in South Florida.</p>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- ── GALLERY ───────────────────────────────────────── -->
+  <section class="gallery" id="gallery">
+    <div class="gallery__header">
+      <p class="eyebrow">Our Work</p>
+      <h2 class="section-title">Recent Projects</h2>
+    </div>
+    <div class="gallery__grid">
+      <div class="gallery__item gallery__item--tall" style="background-image:url('assets/car-hero.png')"></div>
+      <div class="gallery__item" style="background-image:url('assets/car-2.jpg')"></div>
+      <div class="gallery__item" style="background-image:url('assets/car-hero.png');background-position:80% center"></div>
+      <div class="gallery__item gallery__item--wide" style="background-image:url('assets/car-2.jpg');background-position:center 40%"></div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ───────────────────────────────────────── -->
   <section class="contact" id="contact">
     <div class="contact__inner">
-      <div class="contact__text">
-        <p class="section-eyebrow">CONTÁCTANOS</p>
-        <h2 class="section-title">Comienza tu<br/>proyecto Aura</h2>
-        <p class="contact__body">Cada proyecto Aura comienza con una conversación. Cuéntanos tu visión y nuestro equipo de ingeniería te contactará para dar el primer paso.</p>
-        <div class="contact__info">
-          <p><span>EMAIL</span> info@auramotorlab.com</p>
-          <p><span>TELÉFONO</span> +1 (000) 000-0000</p>
-          <p><span>UBICACIÓN</span> En camino — 2025</p>
+
+      <div class="contact__info">
+        <p class="eyebrow">Get In Touch</p>
+        <h2 class="section-title">Schedule Your<br/>Service Today</h2>
+        <p class="contact__body">Contact us to discuss your vehicle's needs. We work with appointments and will match your schedule to ensure the best care possible.</p>
+
+        <div class="contact__details">
+          <div class="contact__detail">
+            <span class="contact__detail-label">Phone</span>
+            <a href="tel:+13053512012">(305) 351-2012</a>
+          </div>
+          <div class="contact__detail">
+            <span class="contact__detail-label">Email</span>
+            <a href="mailto:info@auramotorlab.com">info@auramotorlab.com</a>
+          </div>
+          <div class="contact__detail">
+            <span class="contact__detail-label">Location</span>
+            <span>1800 NW 23rd Street<br/>Miami, FL 33142</span>
+          </div>
+          <div class="contact__detail">
+            <span class="contact__detail-label">Hours</span>
+            <span>Mon – Fri: 8:30am – 5:00pm<br/>Saturday: By Appointment</span>
+          </div>
+          <div class="contact__detail">
+            <span class="contact__detail-label">License</span>
+            <span>MVR #59637</span>
+          </div>
         </div>
       </div>
+
       <form class="contact__form" id="contactForm">
-        <div class="form-group">
-          <input type="text" id="name" name="name" placeholder="Nombre completo" required />
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" name="firstname" placeholder="John" required />
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" name="lastname" placeholder="Doe" required />
+          </div>
         </div>
         <div class="form-group">
-          <input type="email" id="email" name="email" placeholder="Correo electrónico" required />
+          <label>Email</label>
+          <input type="email" name="email" placeholder="john@example.com" required />
         </div>
         <div class="form-group">
-          <input type="tel" id="phone" name="phone" placeholder="Teléfono" />
+          <label>Phone</label>
+          <input type="tel" name="phone" placeholder="(305) 000-0000" />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Vehicle Make</label>
+            <input type="text" name="make" placeholder="Ferrari" />
+          </div>
+          <div class="form-group">
+            <label>Vehicle Model</label>
+            <input type="text" name="model" placeholder="488 GTB" />
+          </div>
         </div>
         <div class="form-group">
-          <select id="program" name="program">
-            <option value="" disabled selected>Programa de interés</option>
-            <option value="gt">AURA GT</option>
-            <option value="speedster">AURA SPEEDSTER</option>
-            <option value="commission">AURA COMMISSION</option>
+          <label>Service Needed</label>
+          <select name="service">
+            <option value="" disabled selected>Select a service</option>
+            <option>Electrical Diagnostics</option>
+            <option>Scheduled Maintenance</option>
+            <option>Mechanical Repair</option>
+            <option>Collision Repair</option>
+            <option>Detail & Paint Protection</option>
+            <option>Restoration Project</option>
+            <option>Other</option>
           </select>
         </div>
-        <div class="form-group form-group--full">
-          <textarea id="message" name="message" placeholder="Cuéntanos tu visión..." rows="4"></textarea>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="message" placeholder="Describe your vehicle's needs..." rows="4"></textarea>
         </div>
-        <button type="submit" class="hero__btn">ENVIAR CONSULTA</button>
+        <button type="submit" class="btn-primary btn-full">Send Request</button>
       </form>
+
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ── FOOTER ────────────────────────────────────────── -->
   <footer class="footer">
     <div class="footer__top">
       <div class="footer__brand">
-        <img src="assets/logo.jpg" alt="Aura Motor Lab" class="footer__logo" />
-        <p class="footer__tagline">Ingeniería sin concesiones.</p>
+        <img src="assets/logo-dark.jpg" alt="Aura Motor Lab" class="footer__logo" />
+        <p>South Florida's Premier Independent<br/>Automotive Repair Facility</p>
       </div>
-      <div class="footer__links">
+      <div class="footer__nav">
         <div class="footer__col">
-          <h4>PROGRAMAS</h4>
-          <a href="#programs">Aura GT</a>
-          <a href="#programs">Aura Speedster</a>
-          <a href="#programs">Aura Commission</a>
+          <h4>Services</h4>
+          <a href="#services">Electrical Diagnostics</a>
+          <a href="#services">Scheduled Maintenance</a>
+          <a href="#services">Mechanical Repair</a>
+          <a href="#services">Collision Repair</a>
+          <a href="#services">Detail & PPF</a>
+          <a href="#services">Restoration</a>
         </div>
         <div class="footer__col">
-          <h4>COMPAÑÍA</h4>
-          <a href="#philosophy">Filosofía</a>
-          <a href="#process">Proceso</a>
-          <a href="#contact">Contacto</a>
+          <h4>Company</h4>
+          <a href="#about">About Us</a>
+          <a href="#brands">Brands We Service</a>
+          <a href="#gallery">Our Work</a>
+          <a href="#contact">Contact</a>
         </div>
         <div class="footer__col">
-          <h4>SÍGUENOS</h4>
-          <a href="#">Instagram</a>
-          <a href="#">YouTube</a>
-          <a href="#">LinkedIn</a>
+          <h4>Contact</h4>
+          <a href="tel:+13053512012">(305) 351-2012</a>
+          <a href="mailto:info@auramotorlab.com">info@auramotorlab.com</a>
+          <span>1800 NW 23rd St<br/>Miami, FL 33142</span>
         </div>
       </div>
     </div>
     <div class="footer__bottom">
-      <p>© 2025 Aura Motor Lab. Todos los derechos reservados.</p>
-      <p>Diseñado con precisión.</p>
+      <p>© 2025 Aura Motor Lab. All rights reserved. · MVR #59637</p>
+      <div class="footer__social">
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">Facebook</a>
+      </div>
     </div>
   </footer>
 

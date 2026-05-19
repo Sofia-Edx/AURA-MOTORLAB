@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURA MOTOR LAB</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <img src="assets/logo.jpg" alt="Aura Motor Lab" class="nav__logo-img" />
+    </div>
+    <button class="nav__toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__menu" id="navMenu">
+      <li><a href="#programs">PROGRAMAS</a></li>
+      <li><a href="#philosophy">FILOSOFÍA</a></li>
+      <li><a href="#process">PROCESO</a></li>
+      <li><a href="#contact" class="nav__cta">CONTACTO</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__video-wrap">
+      <video class="hero__video" autoplay muted loop playsinline>
+        <source src="assets/hero.mov" type="video/mp4" />
+        <source src="assets/hero.mov" type="video/quicktime" />
+      </video>
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">PRECISION — PERFORMANCE — PASSION</p>
+      <h1 class="hero__title">
+        <span class="hero__title-aura">AURA</span>
+        <span class="hero__title-sub">MOTOR LAB</span>
+      </h1>
+      <p class="hero__tagline">Una interpretación moderna del automóvil de alto rendimiento</p>
+      <a href="#programs" class="hero__btn">EXPLORAR PROGRAMAS</a>
+    </div>
+    <div class="hero__scroll">
+      <span>SCROLL</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- INTRO STRIP -->
+  <section class="intro">
+    <div class="intro__inner">
+      <div class="intro__stat">
+        <span class="intro__num">100+</span>
+        <span class="intro__label">Horas de ingeniería por unidad</span>
+      </div>
+      <div class="intro__divider"></div>
+      <div class="intro__stat">
+        <span class="intro__num">0</span>
+        <span class="intro__label">Compromisos en calidad</span>
+      </div>
+      <div class="intro__divider"></div>
+      <div class="intro__stat">
+        <span class="intro__num">∞</span>
+        <span class="intro__label">Posibilidades de personalización</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section class="programs" id="programs">
+    <div class="programs__header">
+      <p class="section-eyebrow">NUESTROS PROGRAMAS</p>
+      <h2 class="section-title">Ingeniería sin concesiones</h2>
+    </div>
+    <div class="programs__grid">
+
+      <article class="program-card" data-index="01">
+        <div class="program-card__img-wrap">
+          <div class="program-card__img program-card__img--1"></div>
+        </div>
+        <div class="program-card__body">
+          <span class="program-card__num">01</span>
+          <h3 class="program-card__name">AURA GT</h3>
+          <p class="program-card__desc">Rendimiento de pista con confort de carretera. Motor biturbo de alta compresión, suspensión adaptativa y aerodinámica activa.</p>
+          <a href="#contact" class="program-card__link">SOLICITAR INFORMACIÓN →</a>
+        </div>
+      </article>
+
+      <article class="program-card" data-index="02">
+        <div class="program-card__img-wrap">
+          <div class="program-card__img program-card__img--2"></div>
+        </div>
+        <div class="program-card__body">
+          <span class="program-card__num">02</span>
+          <h3 class="program-card__name">AURA SPEEDSTER</h3>
+          <p class="program-card__desc">Carrocería descapotable, estructura de fibra de carbono y una experiencia sensorial diseñada para el piloto.</p>
+          <a href="#contact" class="program-card__link">SOLICITAR INFORMACIÓN →</a>
+        </div>
+      </article>
+
+      <article class="program-card" data-index="03">
+        <div class="program-card__img-wrap">
+          <div class="program-card__img program-card__img--3"></div>
+        </div>
+        <div class="program-card__body">
+          <span class="program-card__num">03</span>
+          <h3 class="program-card__name">AURA COMMISSION</h3>
+          <p class="program-card__desc">Un vehículo completamente a medida. Desde la ingeniería hasta el último detalle de interiores — diseñado exclusivamente para ti.</p>
+          <a href="#contact" class="program-card__link">SOLICITAR INFORMACIÓN →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section class="philosophy" id="philosophy">
+    <div class="philosophy__media">
+      <div class="philosophy__media-inner"></div>
+    </div>
+    <div class="philosophy__text">
+      <p class="section-eyebrow">NUESTRA FILOSOFÍA</p>
+      <h2 class="section-title">Construido para<br/>los que sienten<br/>cada curva</h2>
+      <p class="philosophy__body">En Aura Motor Lab no fabricamos autos. Creamos instrumentos de precisión que conectan al conductor con la carretera a un nivel puramente visceral. Cada componente es elegido, cada milímetro es calculado, cada unidad es una obra única.</p>
+      <p class="philosophy__body">No hay producción en masa. No hay atajos. Solo ingeniería obsesiva al servicio de la experiencia de conducción.</p>
+      <a href="#process" class="btn-outline">CONOCER EL PROCESO</a>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="process__header">
+      <p class="section-eyebrow">CÓMO LO HACEMOS</p>
+      <h2 class="section-title">El proceso Aura</h2>
+    </div>
+    <div class="process__steps">
+
+      <div class="process-step">
+        <div class="process-step__icon">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="29" stroke="#00b4d8" stroke-width="1"/>
+            <path d="M20 30 L28 38 L40 22" stroke="#00b4d8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="process-step__num">01</span>
+        <h3 class="process-step__title">CONSULTA</h3>
+        <p class="process-step__desc">Definimos juntos tu visión: desempeño, estética, uso y presupuesto.</p>
+      </div>
+
+      <div class="process-step">
+        <div class="process-step__icon">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="29" stroke="#00b4d8" stroke-width="1"/>
+            <rect x="18" y="20" width="24" height="20" rx="2" stroke="#00b4d8" stroke-width="1.5"/>
+            <line x1="22" y1="27" x2="38" y2="27" stroke="#00b4d8" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="22" y1="32" x2="32" y2="32" stroke="#00b4d8" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="process-step__num">02</span>
+        <h3 class="process-step__title">DISEÑO</h3>
+        <p class="process-step__desc">Ingeniería y diseño industrial trabajan en conjunto para dar forma a cada detalle.</p>
+      </div>
+
+      <div class="process-step">
+        <div class="process-step__icon">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="29" stroke="#00b4d8" stroke-width="1"/>
+            <path d="M22 38 L22 28 L30 22 L38 28 L38 38" stroke="#00b4d8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="26" y="31" width="8" height="7" stroke="#00b4d8" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <span class="process-step__num">03</span>
+        <h3 class="process-step__title">FABRICACIÓN</h3>
+        <p class="process-step__desc">Construcción artesanal en nuestro taller, con materiales de primer nivel y tolerancias mínimas.</p>
+      </div>
+
+      <div class="process-step">
+        <div class="process-step__icon">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="29" stroke="#00b4d8" stroke-width="1"/>
+            <circle cx="30" cy="30" r="8" stroke="#00b4d8" stroke-width="1.5"/>
+            <path d="M30 18 L30 22 M30 38 L30 42 M18 30 L22 30 M38 30 L42 30" stroke="#00b4d8" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="process-step__num">04</span>
+        <h3 class="process-step__title">CALIBRACIÓN</h3>
+        <p class="process-step__desc">Pruebas exhaustivas en pista y carretera hasta alcanzar la configuración óptima.</p>
+      </div>
+
+      <div class="process-step">
+        <div class="process-step__icon">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="29" stroke="#00b4d8" stroke-width="1"/>
+            <path d="M22 30 Q30 20 38 30 Q30 40 22 30Z" stroke="#00b4d8" stroke-width="1.5"/>
+            <circle cx="30" cy="30" r="3" fill="#00b4d8"/>
+          </svg>
+        </div>
+        <span class="process-step__num">05</span>
+        <h3 class="process-step__title">ENTREGA</h3>
+        <p class="process-step__desc">Tu vehículo llega con documentación completa, garantía Aura y soporte vitalicio.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMMISSION SPOTLIGHT -->
+  <section class="spotlight">
+    <div class="spotlight__inner">
+      <p class="section-eyebrow">PROYECTO DESTACADO</p>
+      <h2 class="spotlight__title">AURA X-01<br/><span>COMMISSION SERIES</span></h2>
+      <p class="spotlight__body">Nuestra primera comisión exclusiva. Un vehículo construido desde cero para un cliente que exigía lo imposible — y lo recibió.</p>
+      <a href="#contact" class="hero__btn">SOLICITAR TU COMISIÓN</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <div class="contact__text">
+        <p class="section-eyebrow">CONTÁCTANOS</p>
+        <h2 class="section-title">Comienza tu<br/>proyecto Aura</h2>
+        <p class="contact__body">Cada proyecto Aura comienza con una conversación. Cuéntanos tu visión y nuestro equipo de ingeniería te contactará para dar el primer paso.</p>
+        <div class="contact__info">
+          <p><span>EMAIL</span> info@auramotorlab.com</p>
+          <p><span>TELÉFONO</span> +1 (000) 000-0000</p>
+          <p><span>UBICACIÓN</span> En camino — 2025</p>
+        </div>
+      </div>
+      <form class="contact__form" id="contactForm">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Nombre completo" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Correo electrónico" required />
+        </div>
+        <div class="form-group">
+          <input type="tel" id="phone" name="phone" placeholder="Teléfono" />
+        </div>
+        <div class="form-group">
+          <select id="program" name="program">
+            <option value="" disabled selected>Programa de interés</option>
+            <option value="gt">AURA GT</option>
+            <option value="speedster">AURA SPEEDSTER</option>
+            <option value="commission">AURA COMMISSION</option>
+          </select>
+        </div>
+        <div class="form-group form-group--full">
+          <textarea id="message" name="message" placeholder="Cuéntanos tu visión..." rows="4"></textarea>
+        </div>
+        <button type="submit" class="hero__btn">ENVIAR CONSULTA</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="assets/logo.jpg" alt="Aura Motor Lab" class="footer__logo" />
+        <p class="footer__tagline">Ingeniería sin concesiones.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>PROGRAMAS</h4>
+          <a href="#programs">Aura GT</a>
+          <a href="#programs">Aura Speedster</a>
+          <a href="#programs">Aura Commission</a>
+        </div>
+        <div class="footer__col">
+          <h4>COMPAÑÍA</h4>
+          <a href="#philosophy">Filosofía</a>
+          <a href="#process">Proceso</a>
+          <a href="#contact">Contacto</a>
+        </div>
+        <div class="footer__col">
+          <h4>SÍGUENOS</h4>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Aura Motor Lab. Todos los derechos reservados.</p>
+      <p>Diseñado con precisión.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

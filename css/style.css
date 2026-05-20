@@ -124,7 +124,7 @@ a   { text-decoration: none; color: inherit; }
   align-items: center;
   justify-content: space-between;
   padding: 0 3vw;
-  height: 200px;
+  height: 90px;
   background: transparent;
   transition: background 0.4s, backdrop-filter 0.4s;
 }
@@ -134,7 +134,7 @@ a   { text-decoration: none; color: inherit; }
 }
 
 .nav__logo img {
-  height: 200px;
+  height: 78px;
   width: auto;
   object-fit: contain;
   mix-blend-mode: screen;
@@ -161,16 +161,16 @@ a   { text-decoration: none; color: inherit; }
 
 .nav__cta {
   font-size: 0.82rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.18em;
-  color: var(--black);
+  color: var(--white);
   text-transform: uppercase;
   padding: 0.65rem 1.6rem;
-  background: var(--cyan);
-  border: 1px solid var(--cyan);
-  transition: opacity 0.2s;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  transition: border-color 0.2s, color 0.2s;
 }
-.nav__cta:hover { opacity: 0.82; }
+.nav__cta:hover { border-color: var(--white); color: var(--white); }
 
 .nav__toggle {
   display: none;
@@ -228,9 +228,9 @@ a   { text-decoration: none; color: inherit; }
 
 .hero__title {
   font-family: var(--serif);
-  font-size: clamp(3.8rem, 9vw, 9rem);
+  font-size: clamp(4.5rem, 11vw, 11rem);
   font-weight: 400;
-  line-height: 0.93;
+  line-height: 0.92;
   color: var(--white);
   margin-bottom: 1.6rem;
   letter-spacing: -0.01em;

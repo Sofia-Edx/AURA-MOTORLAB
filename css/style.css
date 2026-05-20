@@ -137,11 +137,11 @@ a   { text-decoration: none; color: inherit; }
   height: 110px;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 0 12px rgba(0,200,212,0.35));
-  transition: filter 0.3s;
+  mix-blend-mode: screen;
+  transition: opacity 0.3s;
 }
 .nav__logo:hover img {
-  filter: drop-shadow(0 0 18px rgba(0,200,212,0.6));
+  opacity: 0.85;
 }
 
 .nav__menu {
@@ -625,9 +625,10 @@ a   { text-decoration: none; color: inherit; }
 }
 
 .footer__logo {
-  height: 52px;
+  height: 80px;
   width: auto;
   object-fit: contain;
+  mix-blend-mode: screen;
   margin-bottom: 1.2rem;
 }
 .footer__brand p {

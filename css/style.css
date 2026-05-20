@@ -124,7 +124,7 @@ a   { text-decoration: none; color: inherit; }
   align-items: center;
   justify-content: space-between;
   padding: 0 3vw;
-  height: 200px;
+  height: 80px;
   background: transparent;
   transition: background 0.4s, backdrop-filter 0.4s;
 }
@@ -134,14 +134,14 @@ a   { text-decoration: none; color: inherit; }
 }
 
 .nav__logo img {
-  height: 200px;
+  height: 65px;
   width: auto;
   object-fit: contain;
   mix-blend-mode: screen;
   transition: opacity 0.3s;
 }
 .nav__logo:hover img {
-  opacity: 0.85;
+  opacity: 0.82;
 }
 
 .nav__menu {

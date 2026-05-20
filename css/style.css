@@ -124,7 +124,7 @@ a   { text-decoration: none; color: inherit; }
   align-items: center;
   justify-content: space-between;
   padding: 0 3vw;
-  height: 80px;
+  height: 200px;
   background: transparent;
   transition: background 0.4s, backdrop-filter 0.4s;
 }
@@ -134,7 +134,7 @@ a   { text-decoration: none; color: inherit; }
 }
 
 .nav__logo img {
-  height: 65px;
+  height: 200px;
   width: auto;
   object-fit: contain;
   mix-blend-mode: screen;

@@ -195,8 +195,8 @@ a   { text-decoration: none; color: inherit; }
   height: 100vh;
   min-height: 620px;
   display: flex;
-  align-items: flex-end;
-  padding-bottom: 14vh;
+  align-items: flex-start;
+  padding-top: calc(200px + 3rem);
   overflow: hidden;
 }
 

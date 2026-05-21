@@ -272,6 +272,41 @@ a   { text-decoration: none; color: inherit; }
   opacity: 0.55;
 }
 
+/* ── MARQUEE ───────────────────────────────────────── */
+.marquee-wrap {
+  background: var(--card);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+  padding: 1.2rem 0;
+  white-space: nowrap;
+}
+
+.marquee-track {
+  display: inline-block;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-track span {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: rgba(255,255,255,0.65);
+  padding: 0 1.5rem;
+}
+
+.marquee-track .dot {
+  color: var(--cyan);
+  font-style: normal;
+  padding: 0;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 /* ── ABOUT ─────────────────────────────────────────── */
 .about {
   background: var(--dark);

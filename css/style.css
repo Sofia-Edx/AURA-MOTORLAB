@@ -475,6 +475,29 @@ a   { text-decoration: none; color: inherit; }
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   transition: background 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.brand-item::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -80%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255,255,255,0.12) 50%,
+    transparent 100%
+  );
+  transform: skewX(-15deg);
+  transition: left 0s;
+  pointer-events: none;
+}
+.brand-item:hover::after {
+  left: 160%;
+  transition: left 0.65s ease;
 }
 .brand-item:hover { background: rgba(255,255,255,0.03); }
 

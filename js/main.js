@@ -32,10 +32,10 @@ if (form) {
   form.addEventListener('submit', e => {
     e.preventDefault();
     const btn = form.querySelector('.btn-submit');
-    btn.textContent = 'SOLICITUD ENVIADA ✓';
+    btn.textContent = 'REQUEST SENT ✓';
     btn.style.background = '#1a8a6e';
     setTimeout(() => {
-      btn.textContent = 'ENVIAR SOLICITUD';
+      btn.textContent = 'SUBMIT REQUEST';
       btn.style.background = '';
       form.reset();
     }, 3500);

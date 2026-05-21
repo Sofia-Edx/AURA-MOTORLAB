@@ -565,6 +565,20 @@ a   { text-decoration: none; color: inherit; }
   gap: 6rem;
   align-items: start;
 }
+.contact__inner--centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.contact__header {
+  text-align: center;
+  max-width: 640px;
+}
+.contact__inner--centered .contact__right {
+  width: 100%;
+  max-width: 780px;
+}
 
 .contact__sep {
   width: 100%;

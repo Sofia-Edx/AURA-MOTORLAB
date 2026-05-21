@@ -470,8 +470,8 @@ a   { text-decoration: none; color: inherit; }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.9rem;
-  padding: 2.5rem 1rem;
+  gap: 1rem;
+  padding: 3rem 1.5rem;
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   transition: background 0.3s;
@@ -479,14 +479,17 @@ a   { text-decoration: none; color: inherit; }
 .brand-item:hover { background: rgba(255,255,255,0.03); }
 
 .brand-item img {
-  height: 36px;
+  height: 64px;
   width: auto;
-  max-width: 80px;
+  max-width: 130px;
   object-fit: contain;
-  filter: brightness(0) invert(1) opacity(0.45);
-  transition: filter 0.3s;
+  filter: brightness(0) invert(1) opacity(0.75);
+  transition: filter 0.3s, transform 0.3s;
 }
-.brand-item:hover img { filter: brightness(0) invert(1) opacity(0.95); }
+.brand-item:hover img {
+  filter: brightness(0) invert(1) opacity(1);
+  transform: scale(1.08);
+}
 
 .brand-item em {
   font-family: var(--serif);

@@ -164,14 +164,15 @@ a   { text-decoration: none; color: inherit; }
   font-size: 0.82rem;
   font-weight: 500;
   letter-spacing: 0.18em;
-  color: var(--white);
+  color: var(--cyan);
   text-transform: uppercase;
   padding: 0.65rem 1.6rem;
   background: transparent;
-  border: 1px solid rgba(255,255,255,0.6);
-  transition: border-color 0.2s, color 0.2s;
+  border: 1px solid var(--cyan);
+  transition: background 0.25s, border-color 0.25s, color 0.25s;
 }
-.nav__cta:hover { border-color: var(--white); color: var(--white); }
+.nav__cta:hover,
+.nav__cta:active { background: var(--cyan); border-color: var(--cyan); color: #0a0a0a; }
 
 .nav__toggle {
   display: none;

@@ -744,6 +744,22 @@ a   { text-decoration: none; color: inherit; }
   font-size: 0.72rem;
   color: var(--gray);
 }
+.footer__social {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+.footer__social a {
+  color: var(--gray);
+  font-size: 1.05rem;
+  transition: color 0.25s, transform 0.25s;
+  display: flex;
+  align-items: center;
+}
+.footer__social a:hover {
+  color: var(--cyan);
+  transform: translateY(-2px);
+}
 
 /* ── SCROLL REVEAL ─────────────────────────────────── */
 .reveal {

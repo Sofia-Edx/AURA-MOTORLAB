@@ -991,8 +991,13 @@ a   { text-decoration: none; color: inherit; }
   display: block;
   filter: brightness(0.85);
   transition: filter 0.4s;
+  animation: kenburns-svc 18s ease-in-out infinite alternate;
+  transform-origin: center center;
+  will-change: transform;
 }
 .svc-section__img:hover { filter: brightness(1); }
+.svc-section__inner > div:first-child,
+.svc-section__inner > div:last-child { overflow: hidden; }
 .svc-section__content .heading-xl { font-size: clamp(1.8rem, 3vw, 2.8rem); }
 .svc-section__content .body-text { margin-bottom: 1rem; }
 .svc-list {

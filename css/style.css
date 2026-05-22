@@ -1024,11 +1024,14 @@ a   { text-decoration: none; color: inherit; }
 .brand-section__logo {
   height: 80px;
   width: auto;
+  max-width: 180px;
   object-fit: contain;
-  opacity: 0.85;
-  filter: brightness(0) invert(1);
+  opacity: 0.9;
+  mix-blend-mode: screen;
   margin-bottom: 1.5rem;
+  transition: opacity 0.3s;
 }
+.brand-section__logo:hover { opacity: 1; }
 .brand-section__models {
   display: flex;
   flex-wrap: wrap;

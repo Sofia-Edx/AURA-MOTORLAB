@@ -695,7 +695,7 @@ a   { text-decoration: none; color: inherit; }
   margin: 0 auto;
   padding: 5rem 6vw 3rem;
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr;
   gap: 3rem;
 }
 
@@ -759,6 +759,24 @@ a   { text-decoration: none; color: inherit; }
 .footer__social a:hover {
   color: var(--cyan);
   transform: translateY(-2px);
+}
+.footer__social-col {
+  display: flex;
+  flex-direction: row;
+  gap: 1.4rem;
+  align-items: center;
+  margin-top: 0.3rem;
+}
+.footer__social-col a {
+  color: var(--cyan);
+  font-size: 1.55rem;
+  transition: color 0.25s, transform 0.25s;
+  display: flex;
+  align-items: center;
+}
+.footer__social-col a:hover {
+  color: var(--white);
+  transform: translateY(-3px);
 }
 
 /* ── SCROLL REVEAL ─────────────────────────────────── */

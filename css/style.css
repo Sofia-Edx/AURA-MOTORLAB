@@ -418,16 +418,27 @@ a   { text-decoration: none; color: inherit; }
 .service-card {
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
+  overflow: hidden;
 }
 
 .service-card__photo {
   height: 210px;
-  background-size: cover;
+  background-size: 110%;
   background-position: center;
   filter: brightness(0.65);
   transition: filter 0.45s;
+  animation: kenburns-svc 20s ease-in-out infinite alternate;
+  will-change: transform, background-position;
 }
 .service-card:hover .service-card__photo { filter: brightness(0.88); }
+
+@keyframes kenburns-svc {
+  0%   { transform: scale(1.0)  translate(0%,   0%); }
+  25%  { transform: scale(1.06) translate(-2%,  1%); }
+  50%  { transform: scale(1.04) translate(1%,  -2%); }
+  75%  { transform: scale(1.08) translate(2%,   1%); }
+  100% { transform: scale(1.05) translate(-1%, -1%); }
+}
 
 .service-card__body { padding: 2rem 2rem 2.5rem; }
 

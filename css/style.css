@@ -665,7 +665,7 @@ a   { text-decoration: none; color: inherit; }
 .form-group label {
   font-size: 0.6rem;
   letter-spacing: 0.2em;
-  color: var(--gray);
+  color: var(--cyan);
   text-transform: uppercase;
 }
 .form-group input,

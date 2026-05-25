@@ -574,6 +574,7 @@ a   { text-decoration: none; color: inherit; }
 .gallery__item:nth-child(1) { grid-area: i1; }
 .gallery__item:nth-child(2) { grid-area: i2; }
 .gallery__item:nth-child(3) { grid-area: i3; }
+.gallery__item:nth-child(3) video { transform: scale(1.4); }
 .gallery__item:nth-child(4) { grid-area: i4; }
 .gallery__item:nth-child(5) { grid-area: i5; }
 .gallery__item:nth-child(6) { grid-area: i6; }

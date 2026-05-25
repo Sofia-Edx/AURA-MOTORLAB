@@ -561,14 +561,14 @@ a   { text-decoration: none; color: inherit; }
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 260px 200px 280px 240px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 260px 260px 240px 200px;
   gap: 6px;
   grid-template-areas:
-    "i1 i2 i2"
-    "i1 i3 i4"
-    "i5 i5 i6"
-    "i7 i8 i9";
+    "i1 i2 i2 i3"
+    "i1 i4 i5 i3"
+    "i6 i6 i7 i8"
+    "i9 i9 i9 i8";
 }
 .gallery__item { overflow: hidden; }
 .gallery__item:nth-child(1) { grid-area: i1; }
@@ -888,13 +888,14 @@ a   { text-decoration: none; color: inherit; }
   /* GALLERY */
   .gallery__grid {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 260px 180px 260px 180px 240px;
+    grid-template-rows: 240px 240px 200px 200px 220px;
     grid-template-areas:
       "i1 i2"
-      "i3 i4"
-      "i5 i5"
-      "i6 i7"
-      "i8 i9";
+      "i1 i3"
+      "i4 i5"
+      "i6 i6"
+      "i7 i8"
+      "i9 i9";
   }
 
   /* CONTACT FORM */

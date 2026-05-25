@@ -561,14 +561,14 @@ a   { text-decoration: none; color: inherit; }
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 280px 200px 260px 200px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 260px 200px 280px 240px;
   gap: 6px;
   grid-template-areas:
-    "i1 i1 i2 i3"
-    "i1 i1 i4 i3"
-    "i5 i6 i6 i7"
-    "i5 i8 i9 i9";
+    "i1 i2 i2"
+    "i1 i3 i4"
+    "i5 i5 i6"
+    "i7 i8 i9";
 }
 .gallery__item { overflow: hidden; }
 .gallery__item:nth-child(1) { grid-area: i1; }
